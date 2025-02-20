@@ -1,0 +1,52 @@
+.sub-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.1rem;
+  background-color: #fff;
+}
+.logo-nav {
+  display: flex;
+}
+.logo-nav a img {
+  border-radius: 10px;
+  margin-top: 0.4rem;
+}
+.contanct-us-nav p {
+  font-size: 0.8rem;
+}
+.contanct-us-nav p span {
+  color: var(--bs-danger);
+  font-weight: bold;
+  margin-left: 0.4rem;
+}
+.sublinks-nav {
+  display: flex;
+  align-items: center;
+}
+.sublinks-nav div {
+  margin-left: 1rem;
+}
+.sublinks-nav div a {
+  margin-left: 0.8rem;
+  font-size: 0.9rem;
+  color: var(--bs-dark-text-emphasis);
+  transition-duration: 0.2s;
+  font-size: 0.7rem;
+}
+.sublinks-nav div a:hover {
+  color: var(--bs-light-text-emphasis);
+  font-weight: bold;
+}
+.sublinks-nav div button {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+}
+.sublinks-nav div button span {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  color: gray;
+}
