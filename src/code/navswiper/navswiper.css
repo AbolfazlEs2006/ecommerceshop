@@ -20,4 +20,5 @@
   border: 1px solid var(--bs-danger);
   padding: 0.1rem;
   object-fit: cover;
+  margin-top: 1.5rem;
 }

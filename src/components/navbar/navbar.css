@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 2.6rem;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fafafa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 .basket-nav {
   display: flex;

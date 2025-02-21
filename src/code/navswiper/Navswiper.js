@@ -15,7 +15,7 @@ import "./navswiper.css";
 export default function Navswiper() {
   return (
     <>
-      <Swiper className="mySwiper" slidesPerView={9}>
+      <Swiper className="mySwiper" slidesPerView={9} spaceBetween={-5}>
         {Swiperdata.map((data) => (
           <SwiperSlide>
             <Link to={data.href}>
