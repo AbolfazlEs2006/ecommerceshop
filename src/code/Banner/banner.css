@@ -1,0 +1,13 @@
+.banner {
+  display: flex;
+  padding: 0 1.6rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.Banner-1,
+.Banner-2 {
+  width: 100%;
+  border-radius: 10px;
+}

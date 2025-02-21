@@ -22,11 +22,9 @@
 .swiper-button-next,
 .swiper-button-prev {
   padding: 1.5rem;
-  margin-top: 0.4rem;
 
   color: var(--bs-info-text-emphasis) !important;
   background-color: transparent !important;
-  font-size: 0.5rem;
 }
 
 .autoplay-progress {

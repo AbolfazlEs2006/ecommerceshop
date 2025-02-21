@@ -41,6 +41,7 @@ export default function Category() {
             <Link to={category.href}>
               <SwiperSlide className="swiper-slide-category">
                 <img src={category.img} alt={category.title} />
+                <h3>{category.title}</h3>
               </SwiperSlide>
             </Link>
           ))}
