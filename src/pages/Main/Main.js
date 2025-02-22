@@ -9,6 +9,7 @@ import Banner from "../../components/Banner/Banner";
 import Article from "../../code/Article/Article";
 import Insights from "../../code/insights/Insights";
 import About from "../../components/about/About";
+import Discount from "../../code/Discount/Discount";
 import Footer from "../../components/footer/Footer";
 
 //Product card datas
@@ -40,6 +41,8 @@ export default function Main() {
       />
       <About title={"گوشی بر اساس ویژگی"} />
       <ProductCard slidepreview={4} />
+      <Discount />
+      <About title={"محبوب ترین برند ها"} />
       <Footer />
     </>
   );
