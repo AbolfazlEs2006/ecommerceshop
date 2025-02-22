@@ -10,6 +10,7 @@ import Article from "../../code/Article/Article";
 import Insights from "../../code/insights/Insights";
 import About from "../../components/about/About";
 import Discount from "../../code/Discount/Discount";
+import Brands from "../../code/brands/Brands";
 import Footer from "../../components/footer/Footer";
 
 //Product card datas
@@ -43,6 +44,7 @@ export default function Main() {
       <ProductCard slidepreview={4} />
       <Discount />
       <About title={"محبوب ترین برند ها"} />
+      <Brands />
       <Footer />
     </>
   );

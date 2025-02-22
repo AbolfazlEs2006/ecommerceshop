@@ -1,15 +1,33 @@
 import React from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+
+import "./brands.css";
 
 import Brandsdata from "./Brandsdata";
 
-export default function Brands() {
+// import required modules
+import { Navigation } from "swiper/modules";
+
+export default function App() {
   return (
     <>
-      <div>
-        {Brandsdata.map((brands) => (
-          <img src={brands.img} alt={brands.alt} />
+      <Swiper
+        navigation={true}
+        modules={[Navigation]}
+        className="mySwiper"
+        slidesPerView={4}
+      >
+        {Brandsdata.map((data) => (
+          <SwiperSlide className="swiper-slide-brands">
+            <img src={data.img} alt={data.alt} />
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
     </>
   );
 }
