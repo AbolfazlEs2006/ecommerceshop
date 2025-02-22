@@ -1,12 +1,14 @@
 import React from "react";
-import { useState } from "react";
 import Navsub from "../../components/navsub/Navsub";
 import Navbar from "../../components/navbar/Navbar";
 import Navswiper from "../../code/navswiper/Navswiper";
 import Header from "../../code/header/Header";
 import Category from "../../code/Category/Category";
 import ProductCard from "../../components/Productcard/Productcard";
-import Banner from "../../code/Banner/Banner";
+import Banner from "../../components/Banner/Banner";
+import Article from "../../code/Article/Article";
+import Insights from "../../code/insights/Insights";
+import About from "../../components/about/About";
 import Footer from "../../components/footer/Footer";
 
 //Product card datas
@@ -21,8 +23,23 @@ export default function Main() {
       <Navswiper />
       <Header />
       <Category />
-      <ProductCard />
-      <Banner />
+      <ProductCard slidepreview={4} />
+      <Banner src={"/assets/banner-2.png"} srcs={"/assets/banner-1.png"} />
+      <Article />
+      <About title={"گوشی بر اساس ویژگی"} />
+      <Insights style={""} img={"/assets/product_cover_1.png"} />
+      <Banner
+        src={"/assets/banner-3.jpg"}
+        srcs={"/assets/banner-4.jpg"}
+        srcss={"/assets/banner-5.jpg"}
+      />
+      <About title={"گوشی بر اساس ویژگی"} />
+      <Insights
+        style={"insights-style-reverce"}
+        img={"/assets/product_cover_2.png"}
+      />
+      <About title={"گوشی بر اساس ویژگی"} />
+      <ProductCard slidepreview={4} />
       <Footer />
     </>
   );

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -10,9 +10,6 @@ import ShoppingBasketOutlinedIcon from "@mui/icons-material/ShoppingBasketOutlin
 
 import { Link } from "react-router";
 
-// data
-import Productcarddata from "./Productcarddata";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -23,12 +20,12 @@ import { Navigation } from "swiper/modules";
 import "./productcard.css";
 import ProductCarddata from "./Productcarddata";
 
-export default function App() {
+export default function App({ slidepreview }) {
   return (
     <>
       <Swiper
         navigation={true}
-        slidesPerView={4}
+        slidesPerView={slidepreview}
         modules={[Navigation]}
         className="mySwiper"
       >
@@ -40,7 +37,7 @@ export default function App() {
                   <div className="product-cards-detail">
                     <div className="product-card">
                       <div className="details-cards">
-                        <img src={card.img} />
+                        <img src={card.img} alt={card.title} />
                       </div>
                       <div className="card-icons">
                         <ShuffleOutlinedIcon />

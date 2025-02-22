@@ -1,0 +1,8 @@
+.Timer-count span {
+  background-color: var(--main-color-one);
+  color: var(--bg-site);
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  margin-left: 0.8rem;
+  font-size: 1.2rem;
+}

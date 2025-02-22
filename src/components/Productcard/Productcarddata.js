@@ -7,6 +7,7 @@ const ProductCarddata = [
     title: "Devvo television",
     price: `3,175,000`,
     discount: `4,200,000`,
+    likes: 2500,
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const ProductCarddata = [
     title: "",
     price: `3,175,000`,
     discount: `4,200,000`,
+    likes: 2500,
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ const ProductCarddata = [
     title: "",
     price: `3,175,000`,
     discount: `4,200,000`,
+    likes: 2500,
   },
   {
     id: 4,
@@ -34,6 +37,7 @@ const ProductCarddata = [
     title: "",
     price: `3,175,000`,
     discount: `4,200,000`,
+    likes: 2500,
   },
   {
     id: 5,
@@ -42,6 +46,7 @@ const ProductCarddata = [
     title: "",
     price: `3,175,000`,
     discount: `4,200,000`,
+    likes: 2500,
   },
   {
     id: 6,
@@ -50,6 +55,7 @@ const ProductCarddata = [
     title: "",
     price: `3,175,000`,
     discount: `4,200,000`,
+    likes: 2500,
   },
   {
     id: 7,
@@ -58,6 +64,7 @@ const ProductCarddata = [
     title: "",
     price: `3,175,000`,
     discount: `4,200,000`,
+    likes: 2500,
   },
   {
     id: 8,
@@ -66,6 +73,7 @@ const ProductCarddata = [
     title: "",
     price: `3,175,000`,
     discount: `4,200,000`,
+    likes: 2500,
   },
 ];
 

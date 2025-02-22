@@ -76,9 +76,11 @@
 
 @font-face {
   font-family: "sens";
-  src: url("../../public/fonts/IranianSansRegular.ttf");
-  src: url("../../public/fonts/IranianSansBold.ttf");
   src: url("../../public/fonts/IRANSans-web.woff");
+  src: url("../../public/fonts/IRANSansWeb.woff");
+  src: url("../../public/fonts/IRANSansWeb.woff2");
+  src: url("../../public/fonts/IRANSansWeb_FaNum.ttf");
+  src: url("../../public/fonts/IRANSansWeb_FaNum.woff");
 }
 
 body {

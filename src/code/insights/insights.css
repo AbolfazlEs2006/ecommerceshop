@@ -1,0 +1,15 @@
+.img-insights img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin-top: 3rem;
+  margin-left: 1rem;
+}
+
+.insights-style {
+  display: flex;
+  background-color: #fff;
+  padding: 0 1.6rem;
+}
+.insights-style-reverce {
+  flex-direction: row-reverse;
+}

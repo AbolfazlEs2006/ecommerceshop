@@ -32,7 +32,7 @@ export default function Navsub() {
       </div>
       <div className="logo-nav">
         <Link to={"/"}>
-          <img src="/assets/logo.jpg" width={120} height={80} />
+          <img src="/assets/logo.jpg" alt="logo" width={120} height={80} />
         </Link>
       </div>
     </div>
