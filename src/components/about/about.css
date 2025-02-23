@@ -14,11 +14,3 @@
   margin-left: 0.6rem;
   font-size: 3rem;
 }
-.about div button {
-  color: var(--bg-site);
-  background-color: var(--main-color-one);
-  border: none;
-  border-radius: 8px;
-  padding: 0.5rem 0.8rem;
-  font-weight: bold;
-}

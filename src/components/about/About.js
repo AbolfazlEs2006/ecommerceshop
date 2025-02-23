@@ -3,11 +3,12 @@ import React from "react";
 // icons
 import GrainOutlinedIcon from "@mui/icons-material/GrainOutlined";
 
+import Button from "../button/Button";
+
 // css file
 import "./about.css";
-import { Link } from "react-router";
 
-export default function About({ title, href }) {
+export default function About({ title, titlebtn }) {
   return (
     <>
       <div className="about">
@@ -15,11 +16,7 @@ export default function About({ title, href }) {
           <GrainOutlinedIcon />
           <h3>{title}</h3>
         </div>
-        <div>
-          <Link>
-            <button>مشاهده همه</button>
-          </Link>
-        </div>
+        <Button title={titlebtn} />
       </div>
     </>
   );

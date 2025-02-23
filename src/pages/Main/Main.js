@@ -11,6 +11,7 @@ import Insights from "../../code/insights/Insights";
 import About from "../../components/about/About";
 import Discount from "../../code/Discount/Discount";
 import Brands from "../../code/brands/Brands";
+import Information from "../../code/information/Information";
 import Footer from "../../components/footer/Footer";
 
 //Product card datas
@@ -28,23 +29,24 @@ export default function Main() {
       <ProductCard slidepreview={4} />
       <Banner src={"/assets/banner-2.png"} srcs={"/assets/banner-1.png"} />
       <Article />
-      <About title={"گوشی بر اساس ویژگی"} />
+      <About title={"گوشی بر اساس ویژگی"} titlebtn={"مشاهده بیشتر"} />
       <Insights style={""} img={"/assets/product_cover_1.png"} />
       <Banner
         src={"/assets/banner-3.jpg"}
         srcs={"/assets/banner-4.jpg"}
         srcss={"/assets/banner-5.jpg"}
       />
-      <About title={"گوشی بر اساس ویژگی"} />
+      <About title={"گوشی بر اساس ویژگی"} titlebtn={"مشاهده بیشتر"} />
       <Insights
         style={"insights-style-reverce"}
         img={"/assets/product_cover_2.png"}
       />
-      <About title={"گوشی بر اساس ویژگی"} />
+      <About title={"گوشی بر اساس ویژگی"} titlebtn={"مشاهده بیشتر"} />
       <ProductCard slidepreview={4} />
       <Discount />
-      <About title={"محبوب ترین برند ها"} />
+      <About title={"محبوب ترین برند ها"} titlebtn={"مشاهده بیشتر"} />
       <Brands />
+      <Information />
       <Footer />
     </>
   );
