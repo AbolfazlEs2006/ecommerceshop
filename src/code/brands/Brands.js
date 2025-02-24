@@ -41,7 +41,7 @@ export default function App() {
         }}
       >
         {Brandsdata.map((data) => (
-          <SwiperSlide className="swiper-slide-brands">
+          <SwiperSlide key={data.alt} className="swiper-slide-brands">
             <img src={data.img} alt={data.alt} />
           </SwiperSlide>
         ))}

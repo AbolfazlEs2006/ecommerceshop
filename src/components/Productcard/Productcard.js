@@ -48,7 +48,7 @@ export default function App({ slidepreview }) {
         }}
       >
         {ProductCarddata.map((card) => (
-          <>
+          <div key={card.id}>
             <SwiperSlide className="swiper-slide-discount">
               <>
                 <Link to={`products/${card.id}`} className="products">
@@ -82,7 +82,7 @@ export default function App({ slidepreview }) {
                 </Link>
               </>
             </SwiperSlide>
-          </>
+          </div>
         ))}
       </Swiper>
     </>

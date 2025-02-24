@@ -56,7 +56,7 @@ export default function Category() {
           }}
         >
           {Categorydata.map((category) => (
-            <Link to={category.href}>
+            <Link key={category.alt} to={category.href}>
               <SwiperSlide className="swiper-slide-category">
                 <img src={category.img} alt={category.title} />
                 <h3>{category.title}</h3>

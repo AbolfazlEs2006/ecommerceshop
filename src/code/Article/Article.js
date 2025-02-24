@@ -33,7 +33,7 @@ const Article = () => {
       className="swiper-article"
     >
       {ProductCarddata.map((article) => (
-        <SwiperSlide className="swiper-slide-article">
+        <SwiperSlide key={article.id} className="swiper-slide-article">
           <div className="article">
             <img src={article.img} alt={article.title} />
             <div className="article-info">

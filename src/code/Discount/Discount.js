@@ -14,7 +14,7 @@ export default function Discount() {
     <>
       <div className="discount">
         {Discountdata.map((data) => (
-          <Link>
+          <Link key={data.id}>
             <div className="discount-style">
               <div className="discount-img">
                 <img src={data.img} alt={data.alt} width={80} />

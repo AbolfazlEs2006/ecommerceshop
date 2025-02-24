@@ -42,7 +42,7 @@ export default function Header() {
         loop={true}
       >
         {Headerdata.map((datas) => (
-          <SwiperSlide className="swiper-slide-header swiper-2">
+          <SwiperSlide key={datas.alt} className="swiper-slide-header swiper-2">
             <Link to={datas.href}>
               <img src={datas.img} alt={datas.alt} width={720} height={190} />
             </Link>
