@@ -25,12 +25,12 @@ export default function Navsub() {
           <Link to={"/contact-us"}>تماس با ما</Link>
         </div>
       </div>
-      <div className="contanct-us-nav">
-        <p>
-          هفت روز هفته، 24 ساعت شبانه‌روز پاسخگوی شما 021<span>12345678</span>
-        </p>
-      </div>
       <div className="logo-nav">
+        <div className="contanct-us-nav">
+          <p>
+            هفت روز هفته، 24 ساعت شبانه‌روز پاسخگوی شما 021<span>12345678</span>
+          </p>
+        </div>
         <Link to={"/"}>
           <img src="/assets/logo.jpg" alt="logo" width={120} height={80} />
         </Link>

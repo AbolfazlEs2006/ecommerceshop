@@ -1,0 +1,8 @@
+.scroll-button {
+  padding: 1rem;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--main-color-one);
+  color: var(--bg-site);
+  height: 60px;
+}

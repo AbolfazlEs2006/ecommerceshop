@@ -96,3 +96,8 @@ a {
 button {
   cursor: pointer;
 }
+
+html {
+  scrollbar-width: auto;
+  scrollbar-color: var(--main-color-one) var(--bs-gray-400);
+}

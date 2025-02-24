@@ -7,10 +7,12 @@
 }
 .logo-nav {
   display: flex;
+  align-items: center;
 }
 .logo-nav a img {
   border-radius: 10px;
   margin-top: 0.4rem;
+  margin-right: 1.9rem;
 }
 .contanct-us-nav p {
   font-size: 0.8rem;
