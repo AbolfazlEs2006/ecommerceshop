@@ -76,14 +76,14 @@ export default function Footer() {
           <div className="footer-link">
             <div className="footer-link-title">
               <FiberManualRecordIcon />
-              <h3>ای اس شاپ</h3>
+              <h3>خدمات ما</h3>
             </div>
             <div className="footer-link-links">
-              <Link>اپلیکیشن</Link>
-              <Link>ارز های جهانی</Link>
-              <Link>مستنداد api</Link>
-              <Link>کسب درآمد</Link>
-              <Link>حریم خصوصی</Link>
+              <Link>پنل فروشندگان</Link>
+              <Link>ضمانت بازگشت وجه</Link>
+              <Link>ارسل پیشتاز</Link>
+              <Link>مرجوعی راحت</Link>
+              <Link>پشتیبانی 24 ساعته</Link>
             </div>
           </div>
         </div>

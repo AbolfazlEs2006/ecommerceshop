@@ -2,7 +2,8 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 0 1.6rem;
+  padding: 1rem 1.6rem;
+  margin-top: 2rem;
 }
 .footer-title {
   display: flex;
@@ -69,6 +70,10 @@
 .footer-link-links a {
   color: var(--bs-gray-800);
   margin-top: 0.5rem;
+  transition-duration: 0.7s;
+}
+.footer-link-links a:hover {
+  color: var(--main-color-one);
 }
 .footer-link-title {
   display: flex;
