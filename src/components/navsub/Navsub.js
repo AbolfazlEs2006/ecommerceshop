@@ -7,14 +7,14 @@ export default function Navsub() {
   return (
     <div className="sub-nav">
       <div className="sublinks-nav">
-        <div>
+        <div className="loggin-btn">
           <button>
             <PersonOutlineOutlinedIcon />
             وارد شوید <span>|</span>
           </button>
         </div>
 
-        <div>
+        <div className="link-subnav">
           <Link to={"/"}>صفحه اصلی</Link>
           <Link to={"/products"}>فروشگاه</Link>
           <Link to={"/amazing"}>شگفت انگیز شو</Link>

@@ -8,7 +8,7 @@ export default function Imginsights({ img }) {
     <>
       <div className="insights">
         <div className="img-insights">
-          <img src={img} alt="insights" width={350} height={380} />
+          <img src={img} alt="insights" />
         </div>
       </div>
     </>

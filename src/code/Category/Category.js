@@ -36,6 +36,24 @@ export default function Category() {
           className="mySwiper"
           slidesPerView={6}
           spaceBetween={10}
+          breakpoints={{
+            360: {
+              slidesPerView: 3,
+              spaceBetween: 10,
+            },
+            640: {
+              slidesPerView: 4,
+              spaceBetween: 10,
+            },
+            768: {
+              slidesPerView: 5,
+              spaceBetween: 10,
+            },
+            1024: {
+              slidesPerView: 6,
+              spaceBetween: 10,
+            },
+          }}
         >
           {Categorydata.map((category) => (
             <Link to={category.href}>

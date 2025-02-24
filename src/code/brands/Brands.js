@@ -21,6 +21,24 @@ export default function App() {
         modules={[Navigation]}
         className="mySwiper"
         slidesPerView={4}
+        breakpoints={{
+          360: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+          },
+        }}
       >
         {Brandsdata.map((data) => (
           <SwiperSlide className="swiper-slide-brands">

@@ -1,13 +1,20 @@
-.banner {
-  display: flex;
-  padding: 0 1.6rem;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
+@media screen and (min-width: 360px) {
+  .banner {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 1.6rem;
+    gap: 2rem;
+    margin-top: -1rem;
+  }
 
-.Banner-1,
-.Banner-2 {
-  width: 100%;
-  border-radius: 10px;
+  .Banner-1,
+  .Banner-2 {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+@media screen and (min-width: 760px) {
+  .banner {
+    display: flex;
+  }
 }
