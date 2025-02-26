@@ -60,7 +60,7 @@ export default function Detailsproduct() {
       top: 0,
       behavior: "smooth",
     });
-  });
+  }, []);
   return (
     <>
       <Navsub />
