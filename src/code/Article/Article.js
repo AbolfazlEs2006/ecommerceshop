@@ -2,6 +2,8 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+// Link
+import { Link } from "react-router";
 
 // Timer
 import Timer from "../../components/Timer/Timer";
@@ -35,7 +37,9 @@ const Article = () => {
       {ProductCarddata.map((article) => (
         <SwiperSlide key={article.id} className="swiper-slide-article">
           <div className="article">
-            <img src={article.img} alt={article.title} />
+            <Link to={`/products/${article.id}`}>
+              <img src={article.img} alt={article.title} />
+            </Link>
             <div className="article-info">
               <h3>{article.description}</h3>
               <p className="favorit-people">

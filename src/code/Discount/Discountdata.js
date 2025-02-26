@@ -1,7 +1,7 @@
 const Discountdata = [
   {
     id: 1,
-    img: "/assets/product-image-1.png",
+    img: "/assets/img/product-image-1.png",
     alt: "product-img-1",
     discount: 15,
     price: 170_000,
@@ -9,7 +9,7 @@ const Discountdata = [
   },
   {
     id: 2,
-    img: "/assets/product-image-2.png",
+    img: "/assets/img/product-image-2.png",
     alt: "product-img-2",
     discount: 25,
     price: 250_000,
@@ -17,7 +17,7 @@ const Discountdata = [
   },
   {
     id: 3,
-    img: "/assets/product-image-3.png",
+    img: "/assets/img/product-image-3.png",
     alt: "product-img-3",
     discount: 17,
     price: 340_000,
@@ -25,7 +25,7 @@ const Discountdata = [
   },
   {
     id: 4,
-    img: "/assets/product-image-4.png",
+    img: "/assets/img/product-image-4.png",
     alt: "product-img-4",
     discount: 19,
     price: 180_000,
@@ -33,7 +33,7 @@ const Discountdata = [
   },
   {
     id: 5,
-    img: "/assets/product-image-5.png",
+    img: "/assets/img/product-image-5.png",
     alt: "product-img-5",
     discount: 8,
     price: 190_000,
@@ -41,7 +41,7 @@ const Discountdata = [
   },
   {
     id: 6,
-    img: "/assets/product-image-6.png",
+    img: "/assets/img/product-image-6.png",
     alt: "product-img-6",
     discount: 5,
     price: 110_000,
@@ -49,7 +49,7 @@ const Discountdata = [
   },
   {
     id: 7,
-    img: "/assets/product-image-7.png",
+    img: "/assets/img/product-image-7.png",
     alt: "product-img-7",
     discount: 35,
     price: 70_000,
@@ -57,7 +57,7 @@ const Discountdata = [
   },
   {
     id: 8,
-    img: "/assets/product-image-11.png",
+    img: "/assets/img/product-image-11.png",
     alt: "product-img-8",
     discount: 4,
     price: 80_000,
@@ -65,7 +65,7 @@ const Discountdata = [
   },
   {
     id: 9,
-    img: "/assets/product-image-12.jpg",
+    img: "/assets/img/product-image-12.jpg",
     alt: "product-img-9",
     discount: 14,
     price: 890_000,

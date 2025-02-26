@@ -89,11 +89,11 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-namad">
-        <img src="/assets/enamad.png" alt="test" width={100} />
-        <img src="/assets/namad-01.png" alt="test" width={100} />
-        <img src="/assets/namad-02.png" alt="test" width={100} />
-        <img src="/assets/namad-03.png" alt="test" width={100} />
-        <img src="/assets/rezi.png" alt="test" width={100} />
+        <img src="/assets/img/enamad.png" alt="test" width={100} />
+        <img src="/assets/img/namad-01.png" alt="test" width={100} />
+        <img src="/assets/img/namad-02.png" alt="test" width={100} />
+        <img src="/assets/img/namad-03.png" alt="test" width={100} />
+        <img src="/assets/img/rezi.png" alt="test" width={100} />
       </div>
       <div className="developer-info">
         <h2>

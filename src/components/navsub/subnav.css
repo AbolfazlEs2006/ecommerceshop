@@ -46,6 +46,9 @@
     color: var(--bs-light-text-emphasis);
     font-weight: bold;
   }
+  .loggin-btn button a {
+    display: flex;
+  }
   .sublinks-nav div button {
     display: flex;
     align-items: center;

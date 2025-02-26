@@ -6,3 +6,8 @@
   margin-left: 0.8rem;
   font-size: 1.2rem;
 }
+.Timernotbag span {
+  background-color: transparent !important;
+  color: var(--main-color-one);
+  padding: 0.5rem 0.5rem !important;
+}

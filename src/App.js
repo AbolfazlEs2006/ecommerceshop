@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React } from "react";
 import { Routes, Route } from "react-router";
 import Main from "./pages/Main/Main";
 import Notfound from "./components/notfound/Notfound";

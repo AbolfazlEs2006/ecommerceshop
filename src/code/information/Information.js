@@ -10,7 +10,7 @@ export default function Information() {
     <div className="information">
       <div>
         <video
-          src="/assets/video.mp4"
+          src="/assets/img/video.mp4"
           autoPlay={true}
           controls={true}
           loop={true}

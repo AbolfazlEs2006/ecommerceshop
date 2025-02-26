@@ -92,7 +92,6 @@
   }
   .article-device {
     display: flex;
-    padding: 2rem;
   }
   .article-device span {
     display: flex;
@@ -100,7 +99,7 @@
     align-items: center;
     justify-content: center;
     color: var(--bs-gray-800);
-    margin: 0.5rem 1rem;
+    margin: 0.5rem 0.3rem;
   }
   .article-device span svg {
     margin-bottom: 0.3rem;

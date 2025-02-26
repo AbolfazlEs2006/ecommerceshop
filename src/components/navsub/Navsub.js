@@ -9,8 +9,10 @@ export default function Navsub() {
       <div className="sublinks-nav">
         <div className="loggin-btn">
           <button>
-            <PersonOutlineOutlinedIcon />
-            وارد شوید <span>|</span>
+            <Link to={"/login"}>
+              <PersonOutlineOutlinedIcon />
+              وارد شوید <span>|</span>
+            </Link>
           </button>
         </div>
 
@@ -32,7 +34,7 @@ export default function Navsub() {
           </p>
         </div>
         <Link to={"/"}>
-          <img src="/assets/logo.jpg" alt="logo" width={120} height={80} />
+          <img src="/assets/img/logo.jpg" alt="logo" width={120} height={80} />
         </Link>
       </div>
     </div>
