@@ -3,7 +3,7 @@ import React, { createContext, useState } from "react";
 const Context = createContext();
 
 export const ContextProvider = ({ children }) => {
-  const [basket, setBasket] = useState(null);
+  const [basket, setBasket] = useState([]);
 
   return (
     <Context.Provider value={{ basket, setBasket }}>

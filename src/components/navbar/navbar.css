@@ -47,6 +47,60 @@
   .mega-tab svg {
     margin-left: 0.5rem;
   }
+  /* basket */
+  .basket-btn-add {
+    position: "relative";
+  }
+  .basket-style {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: #fff;
+    color: var(--bs-gray-700);
+    border-radius: 10px;
+    padding: 2rem;
+    width: 50%;
+    height: 100vh;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  }
+  .basket-style img {
+    width: 150px;
+    background-color: transparent;
+  }
+  .userinfo-basket {
+    display: flex;
+    margin-top: 1rem;
+  }
+  .info-basketstyle div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  .userinfo-price h4 {
+    color: var(--main-color-one);
+  }
+  .remove-basket button {
+    color: var(--main-color-one);
+    border: none;
+    padding: 0.3rem;
+    border-radius: 6px;
+  }
+  .close-basket {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .close-basket button {
+    color: var(--bs-gray-700);
+    border: none;
+    padding: 0.4rem;
+    border-radius: 8px;
+  }
+  .not-basket {
+    display: none;
+  }
 }
 @media screen and (min-width: 640) {
 }
@@ -79,5 +133,55 @@
   }
   .search-nav input::placeholder {
     font-size: 0.8rem;
+  }
+  .basket-btn-add {
+    position: "relative";
+  }
+  .basket-style {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: #fff;
+    color: var(--bs-gray-700);
+    border-radius: 10px;
+    padding: 2rem;
+    width: 30%;
+    height: 100vh;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  }
+  .basket-style img {
+    width: 150px;
+    background-color: transparent;
+  }
+  .userinfo-basket {
+    display: flex;
+    margin-top: 1rem;
+  }
+  .info-basketstyle div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  .userinfo-price h4 {
+    color: var(--main-color-one);
+  }
+  .remove-basket button {
+    color: var(--main-color-one);
+    border: none;
+    padding: 0.3rem;
+    border-radius: 6px;
+  }
+  .close-basket {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .close-basket button {
+    color: var(--bs-gray-700);
+    border: none;
+    padding: 0.4rem;
+    border-radius: 8px;
   }
 }

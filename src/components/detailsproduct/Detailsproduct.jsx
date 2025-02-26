@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { Link, useParams } from "react-router";
 import ProductCarddata from "../Productcard/Productcarddata";
 
+// components
 import Navsub from "../../components/navsub/Navsub";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../footer/Footer";
@@ -24,12 +25,19 @@ import ArrowBackOutlinedIcon from "@mui/icons-material/ArrowBackOutlined";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import ShoppingBasketOutlinedIcon from "@mui/icons-material/ShoppingBasketOutlined";
 import ArrowDownwardOutlinedIcon from "@mui/icons-material/ArrowDownwardOutlined";
+
+// cicle
 import Circle from "../circle/Circle";
 
 // css file
 import "./detailsproduct.css";
 
+// context
+import ContextProvider from "../../context/Context";
+
 export default function Detailsproduct() {
+  const { basket, setBasket } = useContext(ContextProvider);
+
   const [size, setSize] = useState("md");
   const [menuesize, setMenuesize] = useState(false);
   const [count, setCount] = useState(1);
@@ -37,14 +45,18 @@ export default function Detailsproduct() {
   const [chosecolorblack, setChosecolorblack] = useState(false);
   const [chosecolorgreen, setChosecolorgreen] = useState(false);
   const [chosecolorblue, setChosecolorblue] = useState(false);
+
   const params = useParams();
   const product = ProductCarddata.find(
     (details) => params.detailsproduct == details.id
   );
+
   document.title = product.description;
+
   const clicksizeHandeler = () => {
     setMenuesize((prev) => !prev);
   };
+
   const allsize = [
     { id: 1, size: "md" },
     { id: 2, size: "lg" },
@@ -52,15 +64,31 @@ export default function Detailsproduct() {
     { id: 4, size: "xxl" },
     { id: 5, size: "xxxl" },
   ];
+
   if (count < 1) {
     setCount(1);
   }
+
   useEffect(() => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   }, []);
+
+  async function addtobasketHandeler() {
+    const Newproduct = {
+      price: product.price,
+      img: product.img,
+      count,
+      size,
+      description: product.description,
+      information: product.information,
+      discount: product.discount,
+    };
+    const addbasket = await setBasket(Newproduct);
+  }
+
   return (
     <>
       <Navsub />
@@ -80,13 +108,8 @@ export default function Detailsproduct() {
             <div className="discount-detailproduct">
               <span>{product.discountpersent}%</span>
             </div>
-            <div>
-              <img
-                className="img"
-                src={product.img}
-                alt={product.title}
-                width={350}
-              />
+            <div className="img">
+              <img src={product.img} alt={product.title} width={350} />
             </div>
             <div className="detailproduct-img-icon">
               <span>
@@ -252,7 +275,7 @@ export default function Detailsproduct() {
               <h4>{count}</h4>
               <button onClick={() => setCount((prev) => prev - 1)}>-</button>
             </div>
-            <button>
+            <button onClick={addtobasketHandeler}>
               <ShoppingBasketOutlinedIcon />
               افزودن به سبد خرید
             </button>
