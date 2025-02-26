@@ -206,7 +206,7 @@ export default function Detailsproduct() {
           </div>
           <div className="chose-color">
             <Circle title={"انتخاب رنگ کالا"} />
-            <div>
+            <div className="chose-color-btn">
               <button
                 onClick={() => setChosecolorred((prev) => !prev)}
                 className={`red ${chosecolorred ? "border-chose-red" : "red"}`}
@@ -232,16 +232,6 @@ export default function Detailsproduct() {
               >
                 <FiberManualRecordIcon />
                 سبز
-              </button>
-              <button
-                onClick={() => setChosecolorblue((prev) => !prev)}
-                className={`blue ${
-                  chosecolorblue ? "border-chose-blue" : "blue"
-                }`}
-                type="button"
-              >
-                <FiberManualRecordIcon />
-                آبی
               </button>
             </div>
           </div>
