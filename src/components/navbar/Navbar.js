@@ -9,6 +9,8 @@ import "./navbar.css";
 
 import Context from "../../context/Context";
 
+import Button from "../button/Button";
+
 export default function Navbar() {
   const [openbasket, setOpenbasket] = useState(true);
   const { basket, setBasket } = useContext(Context);
@@ -17,6 +19,9 @@ export default function Navbar() {
     const updatebasket = basket.filter((item) => item.id !== id);
     setBasket(updatebasket);
   };
+
+  // قیمت کل
+  const totalPrice = basket.reduce((sum, item) => sum + item.price, 0);
 
   return (
     <>
@@ -78,6 +83,10 @@ export default function Navbar() {
             </div>
           </>
         ))}
+        <div className="pay-btn">
+          <span>جمع کل: {totalPrice.toLocaleString()}</span>
+          <Button title={"تسویه"} link={"/pay"} classstyle={""} />
+        </div>
       </div>
     </>
   );

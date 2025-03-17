@@ -8,7 +8,7 @@ import Button from "../button/Button";
 // css file
 import "./about.css";
 
-export default function About({ title, titlebtn }) {
+export default function About({ title, titlebtn, link }) {
   return (
     <>
       <div className="about">
@@ -16,7 +16,7 @@ export default function About({ title, titlebtn }) {
           <GrainOutlinedIcon />
           <h3>{title}</h3>
         </div>
-        <Button title={titlebtn} />
+        <Button title={titlebtn} link={link} />
       </div>
     </>
   );

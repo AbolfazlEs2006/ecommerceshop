@@ -270,7 +270,7 @@ export default function Detailsproduct() {
             )}
           </div>
           <div className="price-datails">
-            <h1>{product.price} تومان</h1>
+            <h1>{product.price.toLocaleString()} تومان</h1>
             <div>
               <button onClick={() => setCount((prev) => prev + 1)}>+</button>
               <h4>{count}</h4>

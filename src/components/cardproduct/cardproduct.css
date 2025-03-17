@@ -1,0 +1,22 @@
+@media screen and (min-width: 360px) {
+  .cardproduct {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1.6rem;
+  }
+  .product-card {
+    justify-content: space-between;
+  }
+  .details-cards img {
+    width: 100%;
+  }
+  .card-icons {
+    display: none;
+  }
+}
+@media screen and (min-width: 760px) {
+  .cardproduct {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

@@ -32,22 +32,38 @@ export default function Main() {
         srcs={"/assets/img/banner-1.png"}
       />
       <Article />
-      <About title={"گوشی بر اساس ویژگی"} titlebtn={"مشاهده بیشتر"} />
+      <About
+        title={"گوشی بر اساس ویژگی"}
+        titlebtn={"مشاهده بیشتر"}
+        link={"/products"}
+      />
       <Insights style={""} img={"/assets/img/product_cover_1.png"} />
       <Banner
         src={"/assets/img/banner-3.jpg"}
         srcs={"/assets/img/banner-4.jpg"}
         srcss={"/assets/img/banner-5.jpg"}
       />
-      <About title={"گوشی بر اساس ویژگی"} titlebtn={"مشاهده بیشتر"} />
+      <About
+        title={"گوشی بر اساس ویژگی"}
+        titlebtn={"مشاهده بیشتر"}
+        link={"/products"}
+      />
       <Insights
         style={"insights-style-reverce"}
         img={"/assets/img/product_cover_2.png"}
       />
-      <About title={"گوشی بر اساس ویژگی"} titlebtn={"مشاهده بیشتر"} />
+      <About
+        title={"گوشی بر اساس ویژگی"}
+        titlebtn={"مشاهده بیشتر"}
+        link={"/products"}
+      />
       <ProductCard slidepreview={4} />
       <Discount />
-      <About title={"محبوب ترین برند ها"} titlebtn={"مشاهده بیشتر"} />
+      <About
+        title={"محبوب ترین برند ها"}
+        titlebtn={"مشاهده بیشتر"}
+        link={"/products"}
+      />
       <Brands />
       <Information />
       <Footer />

@@ -4,11 +4,11 @@ import { Link } from "react-router";
 
 import "./button.css";
 
-export default function Button({ title, classstyle }) {
+export default function Button({ title, classstyle, link }) {
   return (
     <>
       <div className={`button ${classstyle}`}>
-        <Link>
+        <Link to={link}>
           <button>{title}</button>
         </Link>
       </div>

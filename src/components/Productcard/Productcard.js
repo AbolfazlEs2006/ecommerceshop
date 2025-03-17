@@ -70,7 +70,7 @@ export default function App({ slidepreview }) {
                           <ShoppingBasketOutlinedIcon />
                         </div>
                         <div className="price-detailsed">
-                          <h3>{card.price}</h3>
+                          <h3>{card.price.toLocaleString()}</h3>
                           <h3 className="discount-price">
                             {card.discount}
                             <span>25%</span>
