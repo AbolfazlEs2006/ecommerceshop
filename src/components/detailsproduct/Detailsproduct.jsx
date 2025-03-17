@@ -35,6 +35,9 @@ import "./detailsproduct.css";
 // context
 import ContextProvider from "../../context/Context";
 
+// sweetalert2
+import Swal from "sweetalert2";
+
 export default function Detailsproduct() {
   const { basket, setBasket } = useContext(ContextProvider);
 
@@ -76,8 +79,9 @@ export default function Detailsproduct() {
     });
   }, []);
 
-  async function addtobasketHandeler() {
+  function addtobasketHandeler() {
     const Newproduct = {
+      id: product.id,
       price: product.price,
       img: product.img,
       count,
@@ -86,7 +90,14 @@ export default function Detailsproduct() {
       information: product.information,
       discount: product.discount,
     };
-    const addbasket = await setBasket(Newproduct);
+    setBasket((prevBasket) => [...prevBasket, Newproduct]);
+    Swal.fire({
+      position: "top-end",
+      icon: "success",
+      title: "محصول با موفقیت به سبد خریداضافه شد",
+      showConfirmButton: false,
+      timer: 2000,
+    });
   }
 
   return (
